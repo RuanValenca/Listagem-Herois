@@ -1,0 +1,208 @@
+.herois-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.barra-alfabeto {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.botao-letra {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 2px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao-letra:hover {
+    background-color: #0056b3;
+}
+
+.botao-letra:focus {
+    outline: none;
+}
+
+.barra-pesquisa {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.herois-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.heroi-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s,  0.3s;
+}
+
+.heroi-item:hover{
+    transform: scale(1.05);
+}
+
+.heroi-item.selecionado {
+    color: rgb(19, 19, 187);
+    transform: scale(1.1);
+    border-color: blue;
+    background-color: #000000;
+}
+
+.heroi-imagem {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.heroi-nome {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.botao-lutar {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.botao-lutar:hover {
+    background-color: #0056b3;
+}
+
+.botao-limpar {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.botao-limpar:hover {
+    background-color: #c82333;
+}
+
+.imagem-vencedor {
+    width: 200px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.modal-canto {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ececfc;
+    border-radius: 8px;
+    box-shadow: 0px 0px 70px rgba(28, 8, 75, 0.63);
+    z-index: 1000;
+    width: 250px;
+}
+
+.modal-conteudo {
+    text-align: center;
+}
+
+.modal-herois {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-heroi-item {
+    margin: 5px 0;
+}
+
+.modal-heroi-imagem {
+    width: 80px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.botao-lutar, .botao-limpar, .botao-fechar-modal {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.botao-lutar {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.botao-lutar:hover {
+    background-color: #138496;
+}
+
+.botao-limpar {
+    background-color: #dc3545;
+    color: white;
+}
+
+.botao-limpar:hover {
+    background-color: #c82333;
+}
+
+.botao-fechar-modal {
+    background-color: #dc3545;
+    color: white;
+}
+
+.botao-fechar-modal:hover {
+    background-color: #c82333;
+}
+
+.modal-enter {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.modal-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms ease-in, transform 300ms ease-in;
+}
+
+.modal-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.modal-exit-active {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 300ms ease-in, transform 300ms ease-in;
+}

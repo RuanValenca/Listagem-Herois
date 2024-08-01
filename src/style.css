@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(/font/Inter-Medium.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Inter';
+}
+
+body{
+    background: #ececfc;
+    margin: 0;
+}
+
+header{
+    align-items: center;
+    top: 0;
+    position: relative;
+    margin: 0 0 50px 0;
+    height: 20vh;
+    width: 100%;
+    text-indent: 5vw;
+    color: white;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-color: #040542;
+}
+
+main{
+    height: fit-content;
+    width: auto;  
+    margin: 3%;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 12px;
+    background: #1d0799;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background: #ececfc;
+}
